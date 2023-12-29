@@ -66,6 +66,15 @@ h3 {
   width: 6rem;
   height: 3rem;
   margin: 60px 0 60px 0;
+  transition-duration: 0.4s;
+}
+#buttonwhite:hover {
+  background-color: #fff;
+  color: black;
+}
+#buttonwhite:hover ~ .page1 {
+  color: #fff;
+  opacity: 1;
 }
 #buttonblack {
   cursor: pointer;
@@ -75,8 +84,16 @@ h3 {
   width: 6rem;
   height: 3rem;
   margin: 60px 0 60px 0;
+  transition-duration: 0.4s;
 }
-
+#buttonblack:hover {
+  background-color: black;
+  color: #fff;
+}
+#buttonblack:hover ~ .page2 {
+  color: black;
+  opacity: 1;
+}
 .rollr {
   background-image: url(../assets/img/portfolio3.png);
   background-repeat: no-repeat;
@@ -122,7 +139,12 @@ h3 {
 .front h4 {
   margin: 50px 0 50px 0;
 }
-.page {
+.page1 {
+  position: absolute;
+  right: 120px;
+  bottom: 120px;
+}
+.page2 {
   position: absolute;
   right: 120px;
   bottom: 120px;
@@ -184,4 +206,71 @@ footer a {
   text-align: center;
   padding: 60px;
   margin-top: 60px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  animation: heartbeat 1s infinite;
+  margin: 0 auto;
+}
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: black;
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
 }
