@@ -1,0 +1,33 @@
+@font-face {
+  font-family: didact;
+  src: url(../assets/font/DidactGothic-Regular.ttf);
+}
+@font-face {
+  font-family: worksans;
+  src: url(../assets/font/WorkSans-Regular.ttf);
+}
+
+header {
+  height: 200vh;
+}
+
+header p {
+  font-family: worksans;
+  font-size: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: didact;
+  font-size: 100px;
+  text-align: center;
+}
+header img {
+  width: 50vw;
+  margin: 0 25vw 0 25vw;
+}
+h3 {
+  font-family: worksans;
+  font-size: 160px;
+  text-align: center;
+}
