@@ -8,7 +8,7 @@
 }
 
 header {
-  height: 200vh;
+  height: 230vh;
 }
 
 header p {
@@ -30,4 +30,11 @@ h3 {
   font-family: worksans;
   font-size: 160px;
   text-align: center;
+}
+
+.orbis {
+  background-image: url(../assets/img/portfolio2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
