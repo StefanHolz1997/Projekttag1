@@ -39,6 +39,7 @@ h3 {
   font-family: worksans;
   font-size: 160px;
   text-align: center;
+  margin: 10rem 0 10rem 0;
 }
 
 .orbis {
@@ -47,6 +48,7 @@ h3 {
   background-size: cover;
   height: 100vh;
   position: relative;
+  background-attachment: fixed;
 }
 .orbis p {
   color: #9e9e9e;
@@ -81,6 +83,7 @@ h3 {
   background-size: cover;
   height: 100vh;
   position: relative;
+  background-attachment: fixed;
 }
 .galito {
   background-image: url(../assets/img/portfolio4.png);
@@ -88,6 +91,7 @@ h3 {
   background-size: cover;
   height: 100vh;
   position: relative;
+  background-attachment: fixed;
 }
 .galito p {
   color: #9e9e9e;
@@ -103,6 +107,7 @@ h3 {
   background-size: cover;
   height: 100vh;
   position: relative;
+  background-attachment: fixed;
 }
 .front p {
   font-family: worksans;
@@ -119,10 +124,10 @@ h3 {
 }
 .page {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 120px;
+  bottom: 120px;
 }
-section p:last-of-type {
+.front p:last-of-type {
   font-size: 165px;
   font-family: fjalla;
   opacity: 20%;
@@ -142,4 +147,41 @@ section p:last-of-type {
 .tretto h4 {
   color: #000;
   font-size: 112px;
+}
+.what {
+  background-color: #000;
+  height: 100vh;
+  position: relative;
+}
+.what h5 {
+  color: #fff;
+  font-size: 180px;
+  text-align: center;
+  padding: 130px 0 0 0;
+  margin: 0 0 150px 0;
+}
+.what p {
+  color: #666666;
+  font-family: worksans;
+  font-size: 22px;
+  width: 700px;
+  margin: 0 50px 80px 1300px;
+  line-height: 180%;
+  letter-spacing: 1%;
+}
+.what a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 60px;
+  margin: 0 50px 0 1300px;
+}
+footer a {
+  text-decoration: none;
+  font-family: didact;
+  font-size: 160px;
+  color: #000;
+  display: block;
+  text-align: center;
+  padding: 60px;
+  margin-top: 60px;
 }
